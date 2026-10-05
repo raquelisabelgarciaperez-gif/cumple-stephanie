@@ -1,0 +1,200 @@
+body {
+    background-color: #ffd6e7;
+    font-family:arial, sans-serif;
+    text-align: center;
+}
+.tarjeta{
+    background-color: white;
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2)
+    
+}
+.corazones{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.corazones span{
+    display: inline-block;
+margin: 0  10px;}
+
+@keyframes flotar{
+    0%{
+        transform: translatey(0);
+    }
+    50%{
+        transform: translatey(-20px);
+    }
+    100%{
+        transform: translatey(0);
+    }
+    
+}
+.titulo{
+    font-size: 40px;
+    color: #d63384;
+}
+.corazones span:nth-child(1) {
+    animation: flotar 2s infinite;
+}
+.corazones span:nth-child(2) {
+    animation: flotar 1s infinite;
+}
+.corazones span:nth-child(3) {
+    animation: flotar 1.8s infinite;
+}
+.brillitos{
+    font-size: 25px;
+    margin: 20px;
+}
+.brillitos span {
+    display: inline-block;
+    animation: brillo 1.5s infinite;
+}
+@keyframes brillo {
+    0%{
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+.felicitacion {
+    display: none;
+}
+.recuerdos {
+  display: none;
+    min-height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: #ffd6e7;  
+}
+.recuerdos h1 {
+    color: #d63384;
+    font-size: 40px;
+}
+
+
+.recuerdos p {
+    font-size: 20px
+
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.galeria div {
+    background-color: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: aparecer 1s ease;
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    .galeria div {
+
+    background-color: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: aparecer 1s ease;
+
+}
+
+
+.galeria img {
+
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px;
+    transition: transform 0.3s;
+
+}
+
+.galeria img:hover {
+
+    transform: scale(1.05);
+
+}
+.final {
+    display: none;
+    background-color: white;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.final h1 {
+    color: #d63384;
+}
+
+.final p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.final h2 {
+    color: #d63384;
+}
+
+.sorpresa-final {
+    display: none;
+    text-align: center;
+    background-color: white;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.sorpresa-final h1 {
+    color: #d63384;
+    font-size: 35px;
+}
+
+
+.sorpresa-final p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.corazones-final {
+    font-size: 35px;
+    margin-top: 25px;
+}
